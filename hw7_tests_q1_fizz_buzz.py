@@ -9,7 +9,7 @@
 #
 # To compile and run this code, please just enter the command as below: 
 #
-# python3 hw4_tests_q1_volume_cube.py
+# python3 hw7_tests_q1_fizz_buzz.py
 ###########################################################################
 
 import sys
