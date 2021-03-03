@@ -22,6 +22,8 @@ class FizzBuzzTests(unittest.TestCase):
         self.assertLessEqual(len(q1.fizz_buzz()), 101)
     def test_less_equal2(self):
         self.assertLessEqual(len(q1.fizz_buzz()), 100)
+    def test_equal(self):
+        self.assertEqual(q1.fizz_buzz().index("Fizz"), 2)
 
 if __name__ == '__main__':
     unittest.main(verbosity=2)

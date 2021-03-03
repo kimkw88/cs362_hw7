@@ -16,7 +16,18 @@
 ###########################################################################
 
 def fizz_buzz():
-
-    pass
+    arr = list(range(1, 101))
+    for i in range(len(arr)):
+        if arr[i] % 3 == 0 and arr[i] % 5 == 0:
+            arr[i] = "FizzBuzz"
+        elif arr[i] % 3 == 0:
+            arr[i] = "Fizz"
+        elif arr[i] % 5 == 0:
+            arr[i] = "Buzz"
+        if i % 3 == 0 and i % 5 == 0:
+            print()
+        print(arr[i], end=" ")
+    print()
+    return arr
 
 fizz_buzz()
