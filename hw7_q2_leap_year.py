@@ -14,4 +14,19 @@
 ###########################################################################
 
 def is_leap(year):
-    pass
+    leap = False
+    if year % 4 == 0 and (year % 100 != 0 or year % 400 == 0):
+        leap = True    
+    return leap
+
+cont = '1'
+while (cont == '1'):
+    print("Enter a year: ", end="")
+    year = int(input())
+    if is_leap(year) == True:
+        print(year, "is a leap year")
+    else:
+        print(year, "is not a leap year")
+    print("\nContinue(1) or exit(anykey): ", end="")
+    cont = input()
+    print()

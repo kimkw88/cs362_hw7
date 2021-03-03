@@ -18,9 +18,9 @@ import hw7_q2_leap_year as q2
 class LeapYearTests(unittest.TestCase):
 
     def test_equal1(self):
-        self.assertEqual(q2, True)
+        self.assertEqual(q2.is_leap(2020), True)
     def test_equal2(self):
-        self.assertEqual(q2, False)
+        self.assertEqual(q2.is_leap(2021), False)
 
 
 if __name__ == '__main__':
